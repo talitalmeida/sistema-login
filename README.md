@@ -25,4 +25,4 @@ Caso você queira fazer seus próprios testes, altere a seguinte linha no arquiv
 `const predefinedPassword = "1";`
 
 ---
-NOTAS: O sistema de registro ainda está sendo implementado, mais para frente será adicionado como componente do Udev-lab.
+NOTAS: O sistema de registro já faz parte do sistema de login, mais para frente será adicionado como componente do Udev-lab.
