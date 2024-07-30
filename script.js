@@ -12,20 +12,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
 
-    const loginForm = document.getElementById('.form-box.login form');
-    const emailInput = loginForm.querySelector('input[type="email"]');
-    const passwordInput = loginForm.querySelector('input[type="password"]');
+    const loginForm = document.getElementById('login');
+
     const message = document.createElement('div');
     message.id='message';
     loginForm.appendChild(message);
 
-    const predefinedEmail = "talitalmeida@udev.com";
+    const predefinedEmail = "user@udev.com";
     const predefinedPassword = "1";
 
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const email = document.getElementById('email').value;
-        const password = passwordInput.value;
+        const password = document.getElementById('password').value;
 
         if (email === '' || password === '') {
                 showMessage('Preencha todos os campos.', 'error');
