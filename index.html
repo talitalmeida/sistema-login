@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="icon" type="image/svg+xml" href="/public/logo.svg" />
+    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <title>Udev Lab</title>
+</head>
+<body class="">
+    <img src="./src/assets/Brilho.svg" alt="logo" class="background-glow"/>
+    <div class="logo-container">
+        <img src="./public/logo.svg" alt="Glow" class="logo"/>
+        <h2 class="logo-name">Udev Lab</h2>
+    </div>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h1>Entrar</h1>
+            <form action="#">
+                <div class="input-box">
+                    <label>
+                        <span class="iconify icon-large icon" data-icon="solar:letter-outline"></span>
+                        <input type="email" placeholder="E-mail" required/>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label>
+                        <span class="iconify icon-large icon" data-icon="solar:lock-outline"></span>
+                        <input type="password" placeholder="Senha" required/>
+                    </label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Lembre-se de mim.
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">ENTRAR</button>
+                <div class="register-link">
+                    <p>
+                        Ainda não faz parte do time?
+                        <a href="#">Registrar</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h1>Registrar</h1>
+            <form action="#">
+                <div class="input-box">
+                    <label>
+                        <span class="iconify icon-large icon" data-icon="solar:user-outline"></span>
+                        <input type="text" placeholder="Usuário" required/>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label>
+                        <span class="iconify icon-large icon" data-icon="solar:letter-outline"></span>
+                        <input type="email" placeholder="E-mail" required/>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label>
+                        <span class="iconify icon-large icon" data-icon="solar:lock-unlocked-outline"></span>
+                        <input type="password" placeholder="Senha" required/>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label>
+                        <span class="iconify icon-large icon" data-icon="solar:lock-outline"></span>
+                        <input type="password" placeholder="Confirmar senha" required/>
+                    </label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"><a href="#" >Concordo com os termos e condições.</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">REGISTRAR</button>
+                <div class="login-link">
+                    <p>
+                        Você já faz parte do time?
+                        <a href="#" class="login-link">Entrar</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
