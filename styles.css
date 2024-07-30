@@ -203,3 +203,16 @@ body {
 .login-link p a:hover{
     text-decoration: underline;
 }
+
+.message {
+    padding: 10px;
+    border: 1px solid;
+}
+.success {
+    border-color: green;
+    color: green;
+}
+.error {
+    border-color: red;
+    color: red;
+}
