@@ -26,23 +26,42 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
-        if (email === '' || password === '') {
-                showMessage('Preencha todos os campos.', 'error');
-        } else if (email === predefinedEmail && password === predefinedPassword) {
+        if (email === predefinedEmail && password === predefinedPassword) {
             showMessage('Login realizado com sucesso!', 'success');
             // setTimeout(() => {
-            //     window.location.href = 'welcome.html';
+            //     window.location.href = 'home.vue';
             // }, 2000);
         } else {
-            showMessage('Senha e E-mail não correspondem!', 'error');
+            showMessage('Erro ao realizar login!', 'error');
         }
     });
 
     function showMessage(text, type) {
-        message.textContent = text;
+        const container = document.getElementById('message-container');
+
+        const message = document.createElement('div');
         message.className = `message ${type}`;
+
+        let icon = '';
+        if (type === 'success'){
+            icon = '<span class="iconify" data-icon="solar:verified-check-outline" data-inline="false"></span>';
+        }else if (type === 'error'){
+            icon = '<span class="iconify" data-icon="solar:close-circle-outline" data-inline="false"></span>';
+        }
+
+        message.innerHTML = `
+            <div class="notify-icon">${icon}</div>
+            <div class="notify">${text}</div>
+        `;
+
+        container.appendChild(message);
+
         setTimeout(() => {
-            message.style.display = 'none';
+            message.style.animation = 'fadeOut 0.5s forwards';
+            setTimeout(() => {
+                container.removeChild(message);
+            }, 500);
         }, 2000);
     }
+
 });
