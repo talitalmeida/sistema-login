@@ -1,4 +1,4 @@
-# sistema-login
+# Sistema-login
 
 ![login-udev-lab](https://github.com/user-attachments/assets/a88c9e44-9799-4f76-ae68-53b2948a27dd)
 
@@ -25,4 +25,4 @@ Caso você queira fazer seus próprios testes, altere a seguinte linha no arquiv
 `const predefinedPassword = "1";`
 
 ---
-NOTAS: O sistema de registro já faz parte do sistema de login, mais para frente será adicionado como componente do Udev-lab.
+NOTAS: O sistema de registro já faz parte do sistema de login, mais para frente será adicionado como componente do Udev-lab e o back tbm.
